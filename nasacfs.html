@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>NASA core Flight System (cFS) middleware</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style type="text/css" media="screen">
+        .s-styles { 
+            background-color: #ffffff;
+            padding-top: 10rem;
+            padding-bottom: 14.8rem;
+        }
+
+        .display-1 {
+            font-family: "Frank Ruhl Libre", serif;
+            font-size: 5.5rem;
+            line-height: 1.236;
+            letter-spacing: -0.03rem;
+            margin-top: 0;
+            margin-bottom: 2.8rem;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+
+    <!-- site header
+    ================================================== -->
+    <header class="sean-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">sbourchier.
+                <!-- <img src="images/logo.svg" alt="Homepage"> -->
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li><a href="javascript:history.back()" title="Back">Back</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <!-- <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li> -->
+                <li><a href="https://github.com/sbravo-puppet"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        
+
+    </header> <!-- end s-header -->
+
+    <section id="intro" class="sean-intro target-section">
+
+    </section> <!-- end intro -->
+
+
+
+    <!-- styles
+    ================================================== -->
+    <section id="styles" class="s-styles">
+        
+        <div class="row section-intro add-bottom text-center">
+
+
+            <div class="column large-full">
+                
+
+                <h1 class="display-1">NASA core Flight System (cFS) middleware</h1>
+
+            </div>
+            <img alt="teachingtouchinBandung" src="images/nasacfs.jpg">
+
+        </div>
+
+        <div class="row">
+
+            <h3>Technical Skill: cFS middleware and socket functionality</h3>
+            <p>
+                Satellites and ground stations together can be considered a distributed system 
+                and a common software architecture for providing low-level system functions 
+                such as communication and data management can be provided by a middleware. 
+                The onboard computer of the ‘Joey’ satellite which our team was working on 
+                currently relies on a NASA-developed middleware called the core Flight System (cFS) 
+                to provide low-level system functionality. The cFS would be run on top of the 
+                satellite’s linux operating system and any extra functionalities created by the 
+                team would sit on top of the cFS (hence cFS being the middleware). My main 
+                placement deliverable was to create a cFS application that would handle sending 
+                messages between the satellite and the ground station.
+            </p>
+
+            <!-- <h3>Actions</h3> -->
+            <p>
+                At first, I had no idea what a cFS application meant and how I would go about 
+                creating it. Fortunately, I was able to leverage experience from my <em>Robotics, 
+                Agents and Reasoning</em> course where I wrote several modules for a middleware called 
+                ROS (Robot Operating System). This experience coupled with many questions and many 
+                hours of studying the Gilmour Space GitHub repository allowed me to work out what 
+                sort of system-level functions the cFS provided, how messaging was handled by the 
+                cFS, and how I would leverage these things to design and write my own modules. 
+                Once I began to understand how the cFS worked, I was quickly able to write code 
+                to create a telemetry message. From here I worked out that I would be using the 
+                cFS socket functions to send the message and I was also able to draw on my 
+                experience with sockets from my <em>Systems and Distributed Computing</em> course to start 
+                writing modules in Swift that would provide socket functionality to the rest of 
+                the satellite.
+            </p>
+
+            <!-- <h3>Results</h3> -->
+            <p>
+                By applying my knowledge with ROS and distributed computing I was able to create 
+                several polished software modules. These were tested and merged onto the development 
+                branch of the Gilmour Space GitHub repository where they will be used by other 
+                software modules to establish a network connection between the satellite and a 
+                ground station.
+            </p>
+
+            <!-- <h3>Learning</h3> -->
+            <p>
+                I learnt from this experience many different aspects about how middleware is used, 
+                specifically what functionalities the cFS can provide to a satellite system. I was 
+                able to solidify and extend my knowledge of sockets; how sockets can be configured 
+                for receiving or sending data, whether using connectionless or connection-oriented 
+                protocols and what this would mean for a user. This experience will aid me 
+                significantly in my future endeavours working with distributed systems and networks.
+            </p>
+                
+
+        </div> <!-- end row -->
+
+
+
+    <!-- contact
+    ================================================== -->
+    <!-- <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row contact-infos" data-aos="fade-up">
+
+        </div> <!-- end contact-infos -->
+
+    </section> end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Sean Bourchier 2022</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>

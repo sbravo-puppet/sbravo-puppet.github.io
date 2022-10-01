@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Test-driven software development</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style type="text/css" media="screen">
+        .s-styles { 
+            background-color: #ffffff;
+            padding-top: 10rem;
+            padding-bottom: 14.8rem;
+        }
+
+        .display-1 {
+            font-family: "Frank Ruhl Libre", serif;
+            font-size: 5.5rem;
+            line-height: 1.236;
+            letter-spacing: -0.03rem;
+            margin-top: 0;
+            margin-bottom: 2.8rem;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+
+    <!-- site header
+    ================================================== -->
+    <header class="sean-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">sbourchier.
+                <!-- <img src="images/logo.svg" alt="Homepage"> -->
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li><a href="javascript:history.back()" title="Back">Back</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <!-- <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li> -->
+                <li><a href="https://github.com/sbravo-puppet"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        
+
+    </header> <!-- end s-header -->
+
+    <section id="intro" class="sean-intro target-section">
+
+    </section> <!-- end intro -->
+
+
+
+    <!-- styles
+    ================================================== -->
+    <section id="styles" class="s-styles">
+        
+        <div class="row section-intro add-bottom text-center">
+
+
+            <div class="column large-full">
+                
+
+                <h1 class="display-1">Test-driven software development</h1>
+
+            </div>
+            <img alt="teachingtouchinBandung" src="images/testdrivenswdev.jpg">
+
+        </div>
+
+        <div class="row">
+
+                <h3>Transferable skill: Test-driven development</h3>
+                <p>
+                    Test-driven development (TDD) is not something that came easily for me. I normally 
+                    tested any code I would write by (compiling if need be first) executing it and 
+                    checking to see if the entire program would run. Any rigorous testing using test 
+                    cases (if at all) would occur after I had a suitably working program. However, during my 
+                    placement at Gilmour I was required to continuously create test cases of my code 
+                    as I went along and in fact, I was encouraged to create the test cases before I 
+                    wrote the source code. This methodology was quite different to how I had approached 
+                    software development before. Fortunately, the Swift package manager creates a 
+                    working environment that is highly conducive to TTD by creating a separate 
+                    directory to save the tests and using the command ‘swift run’ would compile 
+                    and run all tests.
+                </p>
+
+                <!-- <h3>Actions</h3> -->
+                <p>
+                    For my Milestone 1 deliverable I did not really understand what type of tests I 
+                    should store in my test directory as I was still stuck in the mindset of needing 
+                    to have code that works and runs first. Trying to foresee what I could test 
+                    without having written the code for something seemed beyond me. I was also trying 
+                    to juggle all the new things I had to learn so Milestone 1 my testing was limited. 
+                    In fact, I wrote all the code into my source files including a ‘driver’ script 
+                    that would call all my functions in a specific order, and then in my test 
+                    directory I created one test function that would call the driver. This was not 
+                    how TTD is performed but it was a steppingstone in my road to understanding TTD. 
+                </p>
+
+                <!-- <h3>Results</h3> -->
+                <p>
+                    For my Milestone 2 deliverable, I had had more exposure to the Swift working 
+                    environment, the Gilmour GitHub repository and with the guidance of my 
+                    supervisors, I began to write tests into my test directory as soon as I added 
+                    functions to my source code. I then recalled that I had created formal documentation 
+                    of test cases in my <em>Software Engineering Fundamentals</em> course, so I drew on this 
+                    experience in creating them for Milestone 2. 
+                </p>
+
+                <!-- <h3>Learning</h3> -->
+                <p>
+                    It was a gradual process, but I started to view my source code in terms of what I 
+                    could test, and this became very enjoyable as it gave me more confidence that I was 
+                    writing code to a decent standard. I think learning TDD is crucial for industry where 
+                    software development needs to be more rigorous, and it forces you to understand 
+                    your code from the point of view of other users.
+                </p>
+        </div> <!-- end row -->
+
+
+
+    <!-- contact
+    ================================================== -->
+    <!-- <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row contact-infos" data-aos="fade-up">
+
+        </div> <!-- end contact-infos -->
+
+    </section> end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Sean Bourchier 2022</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
