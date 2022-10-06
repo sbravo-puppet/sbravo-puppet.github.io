@@ -3200,7 +3200,16 @@ input::-moz-focus-inner {
 }
 
 .testimonials__slide {
-  position: relative;
+  position:relative;
+}
+
+.testimonials__image {
+  position:relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  /* background: #cf1767; */
 }
 
 .testimonials__info {
